@@ -1,0 +1,36 @@
+Start the application and check request and responses.
+
+
+HTTP POST http://localhost:8080/create
+API Request 1
+{
+    "id":1,
+    "name":"user_1",
+    "salary":101
+}
+API Request 2
+{
+    "id":2,
+    "name":"user_2",
+    "salary":102
+}
+
+
+HTTP PUT http://localhost:8080/update
+API Request
+{
+    "id":2,
+    "name":"user_2",
+    "salary":103
+}
+
+
+
+
+HTTP GET http://localhost:8080/
+API Response
+data:{"id":1,"name":"user_1","salary":101}
+ 
+data:{"id":2,"name":"user_2","salary":102}
+
+
